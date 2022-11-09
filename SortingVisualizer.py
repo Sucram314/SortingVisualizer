@@ -678,7 +678,7 @@ def algorithms():
     yield Algorithm("Quick Sort (Iterative)",iterativeQuickSort,400)
     yield Algorithm("Merge Sort (Recursive)",recursiveMergeSort,400)
     yield Algorithm("Merge Sort (Iterative)",iterativeMergeSort,400)
-    yield Algorithm("In Place Merge Sort",inPlaceMergeSort,400)        
+    #yield Algorithm("In Place Merge Sort",inPlaceMergeSort,400)        
     yield Algorithm("Max Heap Sort (Recursive)",recursiveMaxHeapSort,400)
     yield Algorithm("Max Heap Sort (Iterative)",iterativeMaxHeapSort,400)
     yield Algorithm("Min Heap Sort (Recursive)",recursiveMinHeapSort,400)
