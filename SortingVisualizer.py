@@ -7,11 +7,10 @@ import random
 import sys
 
 class Proccessor:
-    def __init__(self,size=100,minPitch=144,maxSemitones=36,delay=0.001,duration=0.005,sample_rate=44100,bits=16,font="verdana",fontsize=18,ico="C:\\Users\\marcu\\OneDrive\\Pictures\\Saved Pictures\\unnamed.jpg",exitkey="esc",channels=20,vol=0.1):
+    def __init__(self,size=100,minPitch=144,maxSemitones=36,delay=0.001,duration=0.005,sample_rate=44100,bits=16,font="verdana",fontsize=18,exitkey="esc",channels=20,vol=0.1):
         pygame.mixer.pre_init(sample_rate,-bits, 2)
         pygame.mixer.init()
         pygame.mixer.set_num_channels(channels)
-        self.ico = ico
         self.vol = vol
         self.exitkey = exitkey
         self.pygameInit()
@@ -44,9 +43,6 @@ class Proccessor:
             sys.exit()
 
     def pygameInit(self):
-        a = pygame.image.load(self.ico)
-        pygame.display.set_icon(a)
-
         pygame.init()
 
         pygame.display.set_caption("Sorting Visualizer")
